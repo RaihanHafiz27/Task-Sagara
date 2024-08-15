@@ -1,20 +1,30 @@
 import { useState } from "react";
 import { Text } from "../../elements/Text/Text";
 import { NavLink } from "../../elements/Link/NavLink";
+import { MobileMenu } from "../../elements/Link/MobileMenu";
+import { Logo } from "../../elements/Logo/Logo";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
   return (
     <nav className="sticky top-0 z-10 w-full bg-white shadow-md">
       <div className="flex items-center justify-between px-4 py-2">
-        <div className="flex items-center justify-between w-full border-2 border-pink-700 md:w-auto">
+        <div className="flex items-center justify-between w-full md:w-auto">
           {/* Logo dan Text */}
           <Logo />
           {/*  Hamburger Menu Button (Mobile) */}
           <button
             className="md:hidden focus:outline-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={toggleMenu}
+            // onClick={() => {
+            //   console.log("Menu state before toggle:", isMenuOpen);
+            //   setIsMenuOpen(!isMenuOpen);
+            //   console.log("Menu state after toggle:", !isMenuOpen);
+            // }}
+            aria-label="Toggle menu"
           >
             <svg
               className="w-6 h-6"
@@ -42,7 +52,7 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu (Visible on Mobile) */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="mt-2 md:hidden">
           <ul className="space-y-4 text-center">
             <li>
@@ -84,22 +94,26 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      )}
+      )} */}
+      {/* Mobile Menu */}
+      {/* Mobile Menu */}
+      {/* {isMenuOpen && <MobileMenu onClose={() => setIsMenuOpen(false)} />} */}
+      <MobileMenu onClose={() => setIsMenuOpen(false)} isOpen={isMenuOpen} />
     </nav>
   );
 };
 
-const Logo = () => {
-  return (
-    <div className="flex items-center space-x-2">
-      <img src="/images/logo.png" alt="Logo" className="w-10 h-10" />
-      <div className="flex flex-col items-start text-lg font-bold">
-        <Text className="text-lg">SAGARA</Text>
-        <div className="relative flex items-center -mt-3 space-x-2">
-          <Text>TECH</Text>
-          <div className="absolute w-1 h-1 transform -translate-x-1 translate-y-1 bg-red-700 rounded-sm left-full"></div>
-        </div>
-      </div>
-    </div>
-  );
-};
+// const Logo = () => {
+//   return (
+//     <div className="flex items-center space-x-2">
+//       <img src="/images/logo.png" alt="Logo" className="w-10 h-10" />
+//       <div className="flex flex-col items-start text-lg font-bold">
+//         <Text className="text-lg">SAGARA</Text>
+//         <div className="relative flex items-center -mt-3 space-x-2">
+//           <Text>TECH</Text>
+//           <div className="absolute w-1 h-1 transform -translate-x-1 translate-y-1 bg-red-700 rounded-sm left-full"></div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };

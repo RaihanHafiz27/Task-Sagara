@@ -8,7 +8,7 @@ export const Section4 = () => {
 
       {/* Tabs */}
       <div className="flex flex-wrap justify-center mb-8 space-x-2 md:space-x-4">
-        <button className="px-4 py-2 mb-2 font-semibold text-white bg-red-600 rounded shadow md:mb-0">
+        <button className="px-4 py-2 mb-2 font-semibold text-white rounded shadow bg-customRed md:mb-0">
           FRONT END DEVELOPER
         </button>
         <button className="px-4 py-2 mb-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow md:mb-0">
@@ -23,14 +23,14 @@ export const Section4 = () => {
       </div>
 
       <div className="flex flex-col items-center w-full md:flex-row justify-evenly md:space-x-8">
-        <div className="flex justify-center w-full border-2 border-red-600 md:w-2/5">
+        <div className="flex justify-center w-full md:w-2/5">
           <img
             src="/images/coding.png"
             alt="Coding Image"
             className="object-cover w-11/12 h-auto rounded shadow-lg"
           />
         </div>
-        <div className="flex flex-col items-center justify-center w-full mt-8 border-2 border-red-600 md:w-2/5 md:mt-0">
+        <div className="flex flex-col items-center justify-center w-full mt-8 md:w-2/5 md:mt-0">
           <h3 className="text-xl font-bold md:text-4xl 2xl:text-5xl text-customRed 2xl:mb-4">
             Front End Certification
           </h3>
@@ -93,102 +93,3 @@ export const Section4 = () => {
     </section>
   );
 };
-
-// export const Section4 = () => {
-//   return (
-//     <section className="flex flex-col items-center justify-center h-screen p-8 text-gray-800 bg-white">
-//       <h2 className="mb-8 text-3xl text-center md:text-4xl font-Inter text-customRed">
-//         Empower Yourself with <br />{" "}
-//         <span className="font-InterBold">Our Certification</span>
-//       </h2>
-
-//       {/* Tabs */}
-//       <div className="flex justify-center mb-8 space-x-4">
-//         <button className="px-4 py-2 font-semibold text-white bg-red-600 rounded shadow">
-//           FRONT END DEVELOPER
-//         </button>
-//         <button className="px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow">
-//           BACK END DEVELOPER
-//         </button>
-//         <button className="px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow">
-//           QUALITY ASSURANCE
-//         </button>
-//         <button className="px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow">
-//           UI/UX DESIGN
-//         </button>
-//       </div>
-
-//       <div className="flex flex-col items-center md:flex-row justify-evenly md:space-x-8">
-//         <div className="w-full border-2 border-red-600 md:w-2/5">
-//           <img
-//             src="/images/coding.png"
-//             alt="Coding Image"
-//             className="object-cover w-11/12 h-auto rounded shadow-lg"
-//           />
-//         </div>
-//         <div className="w-full mt-8 border-2 border-red-600 md:w-2/5 md:mt-0">
-//           <h3 className="text-2xl font-bold md:text-6xl text-customRed">
-//             Front End Certification
-//           </h3>
-//           {/* Langkah 4 */}
-//           <div className="flex items-start my-4">
-//             <div className="relative flex-shrink-0">
-//               <div className="flex items-center justify-center p-3 mr-4 bg-red-100 rounded-full">
-//                 <img
-//                   src="/Icons/kotak4.png" // Ganti dengan path yang sesuai untuk ikon Anda
-//                   alt="Take Test"
-//                   className="w-8 h-8"
-//                 />
-//               </div>
-//             </div>
-//             <div className="flex-grow">
-//               <p className="text-lg text-gray-700">
-//                 This program equips you with the essential skills and knowledge
-//                 to create visually appealing websites or applications.
-//               </p>
-//             </div>
-//           </div>
-//           {/* Langkah 4 */}
-//           <div className="flex items-start my-4">
-//             <div className="relative flex-shrink-0">
-//               <div className="flex items-center justify-center p-1 mr-4 bg-red-100 rounded-full">
-//                 <img
-//                   src="/Icons/kotak2.png" // Ganti dengan path yang sesuai untuk ikon Anda
-//                   alt="Take Test"
-//                   className="w-12 h-12"
-//                 />
-//               </div>
-//             </div>
-//             <div className="flex-grow">
-//               <p className="text-lg text-gray-700">
-//                 Evaluates your proficiency in frontend programming languages and
-//                 other relevant frontend technologies.
-//               </p>
-//             </div>
-//           </div>
-//           {/* Langkah 4 */}
-//           <div className="flex items-start my-4">
-//             <div className="relative flex-shrink-0">
-//               <div className="flex items-center justify-center p-3 mr-4 bg-red-100 rounded-full">
-//                 <img
-//                   src="/Icons/users.png" // Ganti dengan path yang sesuai untuk ikon Anda
-//                   alt="Take Test"
-//                   className="w-8 h-8"
-//                 />
-//               </div>
-//             </div>
-//             <div className="flex-grow">
-//               <p className="text-lg text-gray-700">
-//                 Gain recognition as a qualified frontend developer, enhance your
-//                 career prospects, and open doors to exciting job opportunities.
-//               </p>
-//             </div>
-//           </div>
-//           <button className="px-4 py-2 mt-6 font-semibold text-white bg-red-600 rounded shadow-lg">
-//             Get Detail
-//           </button>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };

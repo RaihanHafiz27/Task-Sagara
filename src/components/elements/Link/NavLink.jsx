@@ -1,22 +1,5 @@
 import { Link } from "react-router-dom";
-
-const listlinks = [
-  {
-    id: 1,
-    name: "IT CERTIFICATION",
-    link: "#it-certification",
-  },
-  {
-    id: 2,
-    name: "CAREERS",
-    link: "#careers",
-  },
-  {
-    id: 3,
-    name: "FAQ",
-    link: "#faq",
-  },
-];
+import { listlinks } from "./listLinks";
 
 export const NavLink = () => {
   return (
