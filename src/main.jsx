@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { LandingPage } from "./pages/landing.jsx";
-import { TestPage } from "./pages/test.jsx";
 import DashboardPage from "./pages/Dashboard.jsx";
 import StudentPage from "./pages/student.jsx";
 
